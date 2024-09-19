@@ -1,0 +1,45 @@
+//plugins {
+//    id 'java'
+//}
+//
+//group = 'org.example'
+//version = '1.0-SNAPSHOT'
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//dependencies {
+//    testImplementation platform('org.junit:junit-bom:5.10.0')
+//    testImplementation 'org.junit.jupiter:junit-jupiter'
+//}
+//
+//test {
+//    useJUnitPlatform()
+//}
+
+plugins {
+    id 'org.springframework.boot' version '3.1.0'  // Or the latest Spring Boot version
+    id 'io.spring.dependency-management' version '1.1.0'
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = '17'  // Ensure this matches your Java version
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web' // Spring Boot Web dependency
+
+    // XML Parsing (No need for external dependencies; Java DOM API is bundled with JDK)
+    // Add JAXB if required for more complex XML processing:
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'  // Only needed if using JAXB binding for XML
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <entry>
+        <key>username</key>
+        <value>john_doe</value>
+    </entry>
+    <entry>
+        <key>password</key>
+        <value>secret123</value>
+    </entry>
+    <entry>
+        <key>email</key>
+        <value>john.doe@example.com</value>
+    </entry>
+    <entry>
+        <key>age</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>city</key>
+        <value>New York</value>
+    </entry>
+</root>
